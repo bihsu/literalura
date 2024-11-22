@@ -188,11 +188,12 @@ public class Principal {
 
     private static void printBook(DatosBook book){
         var impresion = """
-                ----------------------
+                ------------LIBRO-----------
                 Título: %s
                 Autor: %s
                 Idioma: %s
                 Número de descargar: %d
+                ---------------------------
                 """.formatted(book.title(),printAuthors(book.authors()),book.languages().get(0).toString(),book.downloadCount());
         System.out.println(impresion);
     }
