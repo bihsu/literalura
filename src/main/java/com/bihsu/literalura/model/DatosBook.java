@@ -9,7 +9,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 public record DatosBook(
     @JsonAlias("id") Long idApi,
     String title,
-    List<DatosAuthor> authors,
+    List<DatosPersona> authors,
     List<String> languages,
     @JsonAlias("download_count") Long downloadCount
 ) {
